@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - About Me</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- Navbar yang sama -->
+    <!-- Navbar yang sama -->
+    <nav class="bg-blue-600 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-white font-mono text-xl md:text-2xl font-bold tracking-tighter">
+                &lt; Verel . DEV / &gt;
+            </a>
+
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="index.html" class="hover:text-blue-200 transition">Home</a></li>
+                <li><a href="profile.html" class="hover:text-blue-200 font-semibold transition">Our Profile</a></li>
+                <li><a href="index.html#message-section"
+                        class="bg-white text-blue-600 px-4 py-2 rounded-full hover:bg-blue-100 transition font-bold">Message
+                        Us</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 transition duration-300">
+            <a href="index.html" class="block py-3 px-4 text-white hover:bg-blue-800 border-b border-blue-600">Home</a>
+            <a href="profile.html" class="block py-3 px-4 text-white hover:bg-blue-800 border-b border-blue-600">Our
+                Profile</a>
+            <a href="index.html#message-section" class="block py-3 px-4 text-white hover:bg-blue-800">Message Us</a>
+        </div>
+    </nav>
+
+    <!-- =========================
+         SECTION A: PROFILE BANNER
+         ========================= -->
+    <!-- Background Banner -->
+    <div class="h-64 w-full relative bg-gray-800">
+        <img src="assets/banner.svg" alt="Profile Banner" class="w-full h-full object-cover opacity-90">
+        <!-- Posisi Foto Profile - Overlapping -->
+        <div class="absolute -bottom-20 left-1/2 transform -translate-x-1/2">
+            <div
+                class="w-40 h-40 bg-white rounded-full border-4 border-white overflow-hidden shadow-2xl flex items-center justify-center p-1">
+                <!-- Foto generated SVG -->
+                <img src="assets/profile.svg" alt="Foto Profil"
+                    class="w-full h-full object-cover rounded-full bg-gray-100">
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer untuk foto profile -->
+    <div class="mt-32 text-center">
+        <!-- =========================
+             SECTION B: ABOUT ME
+             ========================= -->
+        <h2 class="text-3xl font-bold text-gray-800">Nama Lengkap Anda</h2>
+        <p class="text-blue-600 font-medium text-lg mt-1">Junior Frontend Developer</p>
+
+        <div class="max-w-2xl mx-auto mt-6 px-6 text-gray-600 leading-relaxed">
+            <p>
+                Halo! Saya adalah seorang pemula yang sangat antusias di dunia pemrograman web.
+                Saat ini saya sedang mendalami HTML, CSS, dan JavaScript. Saya senang membuat hal-hal baru
+                dan memecahkan masalah melalui kode. Cita-cita saya adalah menjadi Fullstack Developer profesional.
+            </p>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+
+        <!-- =========================
+             SECTION C: SKILLS
+             ========================= -->
+        <div class="bg-white p-8 rounded-lg shadow mb-8">
+            <h3 class="text-2xl font-bold mb-6 border-b pb-2">My Skills</h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="skill-badge bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-semibold">
+                    HTML5
+                </span>
+                <span class="skill-badge bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-semibold">
+                    CSS3
+                </span>
+                <span class="skill-badge bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full font-semibold">
+                    JavaScript Basic
+                </span>
+                <span class="skill-badge bg-cyan-100 text-cyan-700 px-4 py-2 rounded-full font-semibold">
+                    Tailwind CSS
+                </span>
+            </div>
+        </div>
+
+        <!-- =========================
+             SECTION D: VISION & MISSION
+             ========================= -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Vision -->
+            <div class="bg-white p-8 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-4 text-purple-700">Vision</h3>
+                <p class="text-gray-600">
+                    Menjadi developer yang tidak hanya jago coding, tapi juga bisa memberikan
+                    solusi yang bermanfaat bagi banyak orang melalui teknologi yang saya ciptakan.
+                </p>
+            </div>
+
+            <!-- Mission -->
+            <div class="bg-white p-8 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-4 text-green-700">Mission</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Belajar coding minimal 2 jam setiap hari.</li>
+                    <li>Membangun satu project portfolio setiap bulan.</li>
+                    <li>Selalu mengikuti best practice dalam menulis kode.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- =========================
+             SECTION E: EXPERIENCE (Optional/Dummy)
+             ========================= -->
+        <div class="mt-8 bg-white p-8 rounded-lg shadow">
+            <h3 class="text-xl font-bold mb-4 text-gray-700">Experience</h3>
+            <div class="border-l-4 border-blue-500 pl-4">
+                <h4 class="font-bold">Freelance Pemula</h4>
+                <p class="text-sm text-gray-500">2024 - Sekarang</p>
+                <p class="text-gray-600 mt-1">Mengerjakan project-project kecil dari teman dan latihan mandiri.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>&copy; 2025 Portfolio Saya. </p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

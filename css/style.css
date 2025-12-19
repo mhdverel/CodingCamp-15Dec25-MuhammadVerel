@@ -1,0 +1,28 @@
+/* 
+  Style.css
+  File ini digunakan untuk style tambahan
+  jika Tailwind CSS tidak cukup.
+*/
+
+/* Contoh custom style dasar */
+body {
+    /* Menambahkan scroll behavior yang halus */
+    scroll-behavior: smooth;
+}
+
+/* 
+  Memberikan sedikit efek hover tambahan 
+  untuk kartu project 
+*/
+.project-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* 
+  Style khusus untuk badge skill 
+  agar terlihat lebih rapi
+*/
+.skill-badge {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

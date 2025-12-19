@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya</title>
+
+    <!-- 1. Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 2. Custom CSS Saya -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- Navbar yang sama -->
+    <nav class="bg-blue-600 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-white font-mono text-xl md:text-2xl font-bold tracking-tighter">
+                &lt; Verel . DEV / &gt;
+            </a>
+
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="index.html" class="hover:text-blue-200 transition">Home</a></li>
+                <li><a href="profile.html" class="hover:text-blue-200 font-semibold transition">Our Profile</a></li>
+                <li><a href="index.html#message-section"
+                        class="bg-white text-blue-600 px-4 py-2 rounded-full hover:bg-blue-100 transition font-bold">Message
+                        Us</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 transition duration-300">
+            <a href="index.html" class="block py-3 px-4 text-white hover:bg-blue-800 border-b border-blue-600">Home</a>
+            <a href="profile.html" class="block py-3 px-4 text-white hover:bg-blue-800 border-b border-blue-600">Our
+                Profile</a>
+            <a href="index.html#message-section" class="block py-3 px-4 text-white hover:bg-blue-800">Message Us</a>
+        </div>
+    </nav>
+
+    <!-- =========================
+         SECTION A: HERO WELCOME
+         ========================= -->
+    <section id="welcome-section" class="py-24 text-center bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold mb-6 text-gray-900 leading-tight">
+                Hi <span id="userName" class="text-blue-600">...</span>, <br>
+                Welcome to <span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">VerelDEV</span>
+                World
+            </h2>
+            <p class="text-xl text-gray-600 mt-6 max-w-2xl mx-auto leading-relaxed">
+                Saya membangun website yang clean, responsif, dan mudah digunakan.
+                Mari jelajahi karya-karya saya dan wujudkan ide digital Anda.
+            </p>
+            <div class="mt-10">
+                <a href="#projects-section"
+                    class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-blue-700 transition shadow-lg transform hover:-translate-y-1">Lihat
+                    Project Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SECTION B: PROJECTS
+         ========================= -->
+    <section id="projects-section" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-10 text-gray-800">My Projects</h3>
+
+            <!-- Grid Layout: 1 kolom di HP, 3 kolom di Desktop -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Project Card 1 -->
+                <div class="project-card bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold mb-2 text-blue-700">Web Sekolah</h4>
+                    <p class="text-gray-600 mb-4 h-20 overflow-hidden">
+                        Website profil untuk sekolah dasar dengan galeri foto dan info pendaftaran.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">HTML</span>
+                        <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded">CSS</span>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">View Project</button>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold mb-2 text-blue-700">Kalkulator Sederhana</h4>
+                    <p class="text-gray-600 mb-4 h-20 overflow-hidden">
+                        Aplikasi kalkulator berbasis web untuk menghitung aritmatika dasar.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">JavaScript</span>
+                        <span class="text-xs bg-gray-200 text-gray-800 px-2 py-1 rounded">HTML</span>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">View Project</button>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-bold mb-2 text-blue-700">To-Do List</h4>
+                    <p class="text-gray-600 mb-4 h-20 overflow-hidden">
+                        Aplikasi pencatat tugas sehari-hari dengan fitur tambah dan hapus tugas.
+                    </p>
+                    <div class="mb-4">
+                        <span class="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded">DOM Manipulation</span>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">View Project</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SECTION C: MESSAGE US
+         ========================= -->
+    <section id="message-section" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4 max-w-lg">
+            <h3 class="text-3xl font-bold text-center mb-8 text-gray-800">Message Us</h3>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <form id="messageForm">
+                    <!-- Input Nama -->
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2">Nama</label>
+                        <input type="text" id="inputName" class="w-full border p-2 rounded focus:outline-blue-500"
+                            placeholder="Nama kamu...">
+                    </div>
+
+                    <!-- Input Email -->
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2">Email</label>
+                        <input type="email" id="inputEmail" class="w-full border p-2 rounded focus:outline-blue-500"
+                            placeholder="contoh@email.com">
+                    </div>
+
+                    <!-- Input Pesan -->
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2">Pesan</label>
+                        <textarea id="inputMessage" rows="4" class="w-full border p-2 rounded focus:outline-blue-500"
+                            placeholder="Tulis pesanmu di sini..."></textarea>
+                    </div>
+
+                    <!-- Tombol Submit -->
+                    <button type="submit"
+                        class="w-full bg-green-600 text-white font-bold py-2 rounded hover:bg-green-700 transition">
+                        Kirim Pesan
+                    </button>
+                </form>
+
+                <!-- Area untuk menampilkan hasil submit -->
+                <div id="formResult"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>&copy; 2025 Portfolio Saya. Dibuat dengan semangat belajar.</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

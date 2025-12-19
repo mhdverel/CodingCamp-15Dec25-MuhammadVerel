@@ -1,0 +1,9 @@
+<svg width="240" height="50" viewBox="0 0 240 50" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="transparent"/>
+    <text x="10" y="35" font-family="monospace, ui-monospace, SFMono-Regular" font-size="28" font-weight="bold">
+        <tspan fill="#2563EB">&lt;</tspan>
+        <tspan fill="#1F2937">Verel</tspan>
+        <tspan fill="#2563EB">.DEV</tspan>
+        <tspan fill="#2563EB">/&gt;</tspan>
+    </text>
+</svg>
